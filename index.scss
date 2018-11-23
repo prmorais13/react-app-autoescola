@@ -1,3 +1,28 @@
-h1 {
-  color: blue;
+$app-padding: 20px;
+$container-max-width: 600px;
+$color-primary: #03a9f4;
+$color-danger: #f44336;
+$color-success: #4caf50;
+
+body {
+  // background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.button {
+  background-color: $color-primary;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #fff;
+  min-width: 100px;
+  min-height: 100px;
 }

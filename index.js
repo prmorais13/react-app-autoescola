@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 
 import './index.scss';
 
-ReactDOM.render(
+const Button = ({ children }) => (
   <div>
+    <button className="button">{children}</button>;
+  </div>
+);
+
+ReactDOM.render(
+  <div className="container">
     <h2>Serviços</h2>
     <hr />
-    <button>Aula Teórica</button>
-    <h2>Alunos</h2>
+    <Button>Aula Teórica</Button>
+    <h2>Cadastros</h2>
     <hr />
-    <button>Aula Teórica</button>
+    <Button>Alunos</Button>
   </div>,
   document.getElementById('root')
 );
